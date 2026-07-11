@@ -42,7 +42,9 @@ print(f'{next(generate_object)=}')
 print(f'{next(generate_object)=}')
 
 # check what happens when we run out of values
-print(f'{next(generate_object)=}')
-
+try: 
+    print(f'{next(generate_object)=}')
+except StopIteration:
+    print("generator is exhausted")
 
 
