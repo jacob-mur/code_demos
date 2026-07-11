@@ -219,3 +219,6 @@ __marimo__/
 
 # ds_store
 .DS_Store
+
+# custom folders
+python/file_read/data/*
