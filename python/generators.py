@@ -1,5 +1,5 @@
 """
-Code sample demonstrating generators
+code sample demonstrating generators
 - generators return an iterator
 - instead of computing all values up front and returning a list
 - generators product one value at a time, pausing computation between

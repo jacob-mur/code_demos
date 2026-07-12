@@ -4,13 +4,10 @@ author: jacob murray
 description: code sample to demonstration list, dict comprehensions
 """
 
-# list comprehensions
+# list
 list_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-###################
-#  using a for loop
-###################
-
+# using a for loop
 even_numbers = []
 
 for number in list_1: 
@@ -23,9 +20,9 @@ for number in list_1:
 
 print(even_numbers)
 
-#####################
+# -------------------
 # list comprehension!
-#####################
+# -------------------
 
 ## [expression for member in iterable]
 ## [expression for member in iterable if conditional]
@@ -45,9 +42,9 @@ fruit_list = ['apple', 'banana', 'cherry', 'peach']
 fruit_comp = [x if x != "apple" else "switch" for x in fruit_list]
 fruit_comp
 
-###########################
+# -------------------
 # dictionary comprehensions
-###########################
+# -------------------
 
 # creating dictionaries from iterables
 genres = ["rock", "classical", "pop", 'rap']
@@ -59,9 +56,6 @@ genres = ["rock", "classical", "pop", 'rap']
      "weight": "Columbus",
      "height": 140
     }
-
-
-
 }
 
 # comps with dictionaries

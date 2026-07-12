@@ -10,6 +10,17 @@ attributes:
 basic rule:
     - attribute = a NOUN describing the object
     - method = a VERB the object can perform
+
+important note:
+- functions and methods are closely related, but not the same
+- functions are defined outside of any class, methods are defined inside object/class
+- function: function_name(), method: object.method name
+- data acess: 
+    - functions only operate on arguments passed
+    - methods can can access / modify internal state of an object
+
+technical nuance:
+- in Python 3, difference between accessing function via class name vs through class instance
 """
 
 class Car: 

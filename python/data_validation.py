@@ -2,7 +2,7 @@ import pandas
 from pydantic import BaseModel, field_validator
 from typing import Optional
 
-# Define your model — each field has a type, Pydantic enforces it
+# define your model — each field has a type, Pydantic enforces it
 class User(BaseModel):
     name: str
     age: int
