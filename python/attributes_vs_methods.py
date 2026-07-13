@@ -56,6 +56,7 @@ musicians.hasnans
 
 # methods of a series object
 musicians.count()
+musicians
 
 # let's try our own class
 class Car: 
@@ -83,7 +84,11 @@ class Car:
 
 my_car = Car('VW', 'JETTA', 2024, 'Hybrid', 76)
 type(my_car)
-
+try:
+    my_car.type()
+except AttributeError as e:
+    print(f'AttributeError: {e}')
+    
 # testing attribute
 my_car.wheels
 my_car.brand
