@@ -1,3 +1,5 @@
+import pandas as pd
+
 """
 demonstrating the difference between attributes vs methods
 attributes: 
@@ -23,6 +25,39 @@ technical nuance:
 - in Python 3, difference between accessing function via class name vs through class instance
 """
 
+band_data = pd.DataFrame({
+    'Musician': ['John Lennon', 'Jimi Hendrix', 'Ella Fitzgerald', 
+                 'Freddie Mercury', 'Miles Davis', 'Stevie Wonder'],
+    'Genre': ['Rock', 'Rock', 'Jazz', 
+              'Rock', 'Jazz', 'R&B'],
+    'Band': ['The Beatles', 'The Jimi Hendrix Experience', 
+             'Solo', 'Queen', 'Solo', 'Solo'],
+    'Instrument': ['Guitar/Vocals', 'Guitar', 'Vocals', 
+    'Vocals', 'Trumpet', 'Piano/Vocals']
+})
+
+# checking our object type
+type(band_data)
+
+# attributes of dataframe objects
+band_data.columns
+band_data.shape
+
+# methods of a dataframe object
+band_data.info()
+band_data.drop(columns = 'Instrument')
+
+# creating a series
+musicians = band_data['Musician']
+type(musicians)
+
+# attributes of a series object
+musicians.hasnans
+
+# methods of a series object
+musicians.count()
+
+# let's try our own class
 class Car: 
     """a simple class to demonstrate attributes and methods"""
 
