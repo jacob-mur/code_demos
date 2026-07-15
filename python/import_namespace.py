@@ -4,6 +4,7 @@ code sample demonstrating import, from {package} import, and aliasing
 
 # importing sqrt from the math module
 from math import sqrt
+sqrt
 
 # let's check the module!
 sqrt.__module__

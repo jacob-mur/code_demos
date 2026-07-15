@@ -56,6 +56,7 @@ musicians.hasnans
 
 # methods of a series object
 musicians.count()
+band_data.count()
 musicians
 
 # let's try our own class
