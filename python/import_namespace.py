@@ -5,14 +5,17 @@ code sample demonstrating import, from {package} import, and aliasing
 # importing sqrt from the math module
 from math import sqrt
 sqrt
+help(sqrt)
 
 # let's check the module!
 sqrt.__module__
 
 from cmath import sqrt
 
+
 # let's check the module again!
 sqrt.__module__
+help(sqrt)
 
 # as we can see, functions/methods are simply objects and sequence matters
 
